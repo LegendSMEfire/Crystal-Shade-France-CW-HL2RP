@@ -23,7 +23,7 @@ ITEM.attachmentModelScale = Vector(1.1, 1.05, 1.05);
 ITEM:AddData("armorAmt", -1, true);
 
 
--- A function to get whether the attachment is visible.
+
 function ITEM:GetAttachmentVisible(player, entity)
 	local model = player:GetModel();
 
@@ -33,7 +33,7 @@ function ITEM:GetAttachmentVisible(player, entity)
 end;
 
 
--- Called when a player wears the accessory.
+
 function ITEM:OnWearItem(player, bIsWearing)
 	if (bIsWearing) then
 		Clockwork.player:CreateGear(player, "KevlarVest", self, true);
